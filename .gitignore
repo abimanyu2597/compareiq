@@ -1,0 +1,92 @@
+# ========================
+# ENV & SECRETS
+# ========================
+.env
+.env.*
+!.env.example
+
+# ========================
+# PYTHON (Backend)
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+
+# ========================
+# NODE / NEXT (Frontend)
+# ========================
+node_modules/
+.next/
+out/
+dist/
+
+# Lock files (optional)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ========================
+# BUILD / TEMP FILES
+# ========================
+*.zip
+*.tar
+*.gz
+*.rar
+
+# ========================
+# UPLOADS / DATA (IMPORTANT)
+# ========================
+backend/uploads/
+uploads/
+data/
+tmp/
+temp/
+
+# ========================
+# DOCKER
+# ========================
+*.env.docker
+docker-compose.override.yml
+
+# ========================
+# IDE / SYSTEM FILES
+# ========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ========================
+# CACHE / TEST
+# ========================
+.cache/
+pytest_cache/
+.mypy_cache/
+
+# ========================
+# AI / VECTOR DB (VERY IMPORTANT)
+# ========================
+*.faiss
+*.pkl
+*.bin
+*.index
+qdrant_storage/
+vector_store/
+embeddings/
+
+# ========================
+# CELERY / REDIS
+# ========================
+celerybeat-schedule
+redis_dump.rdb
