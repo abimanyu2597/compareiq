@@ -199,7 +199,7 @@ uvicorn main:app --reload --port 8000
 cd compareiq-ai/frontend
 
 npm install
-cp ../.env.example .env.local
+cp ../.env.env.local
 # Make sure NEXT_PUBLIC_API_URL=http://localhost:8000
 
 npm run dev
@@ -230,7 +230,7 @@ docker run -d -p 5432:5432 \
 ### Docker Compose (full stack)
 
 ```bash
-cp .env.example .env
+cp .env .env
 # Add OPENAI_API_KEY and GROQ_API_KEY to .env
 docker compose up --build
 # → http://localhost:3000
